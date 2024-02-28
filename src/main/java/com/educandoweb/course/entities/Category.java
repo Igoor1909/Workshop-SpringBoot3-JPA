@@ -17,6 +17,7 @@ import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "tb_category")
+// crirar a tabela de categorias
 public class Category implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -24,6 +25,8 @@ public class Category implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	// annotation responsavel para gerar ID automaticamente
+	
 	private String name;
 
 	@JsonIgnore
